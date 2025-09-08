@@ -9,6 +9,7 @@ html,body {
     width: 100vw;
     height: 100vh;
     background-color: black;
+     
 }
 body{
     background: url(../imagens/fundo-madeira.jpg) no-repeat top center;
@@ -18,17 +19,28 @@ body{
 main {
     height: 100vh;
     
+    
     position: relative;
 }
 #telefone {
-    position: absolute;
+  Position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
-   
-
+    transform: translate(-50%,-50%);
     height: 627px;
     width: 311px;
-     
+
      background:url(../imagens/frame-iphone.png) no-repeat;
+}
+#tela{
+    position: relative;
+    top: 81px;
+    left: 23px;
+    width: 269px;
+    height: 470px;
+    overflow: hidden;
+    background-size: cover;
+
+    
+   
 }
