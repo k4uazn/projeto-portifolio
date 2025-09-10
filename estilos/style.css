@@ -4,6 +4,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
 }
 html,body {
     width: 100vw;
@@ -26,21 +27,42 @@ main {
   Position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%) scale(0.8);
     height: 627px;
     width: 311px;
+    overflow: hidden;
+    
 
-     background:url(../imagens/frame-iphone.png) no-repeat;
+    background: url(../imagens/frame-iphone.png) no-repeat;
 }
+
 #tela{
     position: relative;
-    top: 81px;
-    left: 23px;
+    top: 80px;
+    left: 22px;
     width: 269px;
-    height: 470px;
-    overflow: hidden;
-    background-size: cover;
-
-    
+    height: 471px;
+   overflow: hidden;
    
+}
+#tela iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#redes-sociais img{
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.411);
+    box-sizing: border-box;
+}
+#redes-sociais{
+    text-align: right;
+}
+#redes-sociais img:hover{
+    border: 2px solid rgba(255, 255, 255, 0.658);
+    transform: translate(-4px,-4px);
+    box-shadow: 7px 4px 10px black;
+    transition: transform .4s;
 }
